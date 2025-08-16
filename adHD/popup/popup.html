@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>adHD</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header" id="popupHeader">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">🧠</div>
+          <h1>adHD</h1>
+        </div>
+        <div class="status">
+          <div class="status-dot" id="statusDot"></div>
+          <span id="statusText">Checking...</span>
+          <button id="pingBtn" class="ping-btn" title="Ping API">🔄</button>
+          <button id="toggleBtn" class="toggle-btn" title="Toggle Extension">
+            <span class="toggle-icon">🟢</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="instructions">
+      <p>Select text on any webpage to get AI-powered summaries with highlighted key points.</p>
+    </div>
+    
+    <div class="provider-selection">
+      <label for="providerSelect">AI Provider:</label>
+      <select id="providerSelect" class="provider-select">
+        <option value="groq">Groq (LLaMA 3.1)</option>
+        <option value="gemini">Google Gemini</option>
+      </select>
+    </div>
+    
+    <div class="actions">
+      <button id="openOptions" class="btn-secondary">
+        <span>⚙️</span>
+        Settings
+      </button>
+    </div>
+    
+    <div class="footer">
+      <div class="usage-tip" id="usageTip">
+        Select 50+ characters to summarize
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

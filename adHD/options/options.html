@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>adHD Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body data-theme="dark">
+  <div class="options-container">
+    <header>
+      <div class="logo">
+        <span class="logo-icon">🧠</span>
+        <h1>adHD Settings</h1>
+      </div>
+    </header>
+    
+    <main>
+      <form id="optionsForm">
+        <div class="form-group">
+          <label for="provider">AI Provider</label>
+          <select id="provider">
+            <option value="groq">Groq (LLaMA 3.1 8B)</option>
+            <option value="gemini">Google Gemini</option>
+          </select>
+          <small>Choose your preferred AI provider for text analysis</small>
+        </div>
+        
+        <div class="form-group">
+          <label for="minLength">Minimum Text Length</label>
+          <div class="input-wrapper">
+            <input type="number" id="minLength" min="10" max="500" value="50">
+            <span class="unit">characters</span>
+          </div>
+          <small>Text must be at least this long to trigger summarization</small>
+        </div>
+        
+        <div class="form-group">
+          <label for="theme">Appearance Theme</label>
+          <select id="theme">
+            <option value="dark" selected>Dark Theme</option>
+            <option value="light">Light Theme</option>
+          </select>
+          <small>Choose your preferred color scheme</small>
+        </div>
+
+        <div class="form-group">
+          <label for="enabled">Extension Status</label>
+          <select id="enabled">
+            <option value="true" selected>Enabled</option>
+            <option value="false">Disabled</option>
+          </select>
+          <small>Enable or disable the extension functionality</small>
+        </div>
+        
+        <button type="submit" class="save-btn">
+          <span>💾</span>
+          Save Settings
+        </button>
+        
+        <div id="statusMessage" class="status-message"></div>
+      </form>
+    </main>
+    
+    <footer>
+      <div class="info">
+        <p>📝 Select text on any webpage to get AI summaries</p>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
