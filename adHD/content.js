@@ -477,11 +477,11 @@ class TextSumBubble {
 
     try {
       console.log('Fetching summary from API...');
-      const response = await fetch('http://localhost:3000/api/summarize', {
+      const response = await fetch('<base-url>/api/summarize', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-API-Key': 'awdawd.341414.fefaefafa2.dadad'
+          'X-API-Key': 'some-kind-of-api-key'
         },
         body: JSON.stringify({
           text: text,
