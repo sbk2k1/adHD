@@ -2,7 +2,7 @@
 
 Last updated: 26-08-25
 
-## Information We Collect
+## Information We Use
 - Selected text content (processed temporarily for summarization)
 - Extension settings and preferences (stored locally)
 
