@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
 
-      const response = await fetch('http://localhost:3000/api/health', {
+      const response = await fetch('https://adhd.sbk2k1.in/api/health', {
         signal: controller.signal
       });
 

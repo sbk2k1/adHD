@@ -344,3 +344,5 @@ app.listen(port, () => {
   console.log(`🔑 API Key authentication enabled`);
   console.log(`🚀 Providers: Groq ${groq ? '✅' : '❌'}, Gemini ${genAI ? '✅' : '❌'}`);
 });
+
+module.exports = app;
