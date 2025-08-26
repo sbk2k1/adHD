@@ -1,6 +1,6 @@
 # Privacy Policy for adHD Reading Assistant
 
-Last updated: 15-08-25
+Last updated: 26-08-25
 
 ## Information We Collect
 - Selected text content (processed temporarily for summarization)
