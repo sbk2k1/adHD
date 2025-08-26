@@ -20,7 +20,6 @@ Last updated: 26-08-25
 - You may contact us to request deletion of any stored data (even though there are none)
 
 ## Data Security
-- All communications are encrypted
 - Text content is not logged or stored
 - API keys are secured server-side
 
