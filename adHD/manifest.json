@@ -5,8 +5,7 @@
   "manifest_version": 3,
   "permissions": [
     "activeTab",
-    "storage",
-    "scripting"
+    "storage"
   ],
   "host_permissions": [
     "https://adhd.sbk2k1.in/*"
