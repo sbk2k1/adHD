@@ -1,7 +1,7 @@
 {
   "name": "adHD",
   "description": "AI-powered text summarization and highlighter with Groq and Gemini",
-  "version": "1.0",
+  "version": "1.01",
   "manifest_version": 3,
   "permissions": [
     "activeTab",
